@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply bg-pitch text-white antialiased;
+  }
+}
+
+@layer utilities {
+  .text-glow-magenta {
+    text-shadow:
+      0 0 10px #ff00ff,
+      0 0 20px #ff00ff,
+      0 0 40px #ff1493,
+      0 0 80px #ff00ff;
+  }
+
+  .text-glow-yellow {
+    text-shadow:
+      0 0 10px #ffff00,
+      0 0 20px #ffff00,
+      0 0 40px #ffd700,
+      0 0 60px #ffff00;
+  }
+
+  .text-glow-subtle {
+    text-shadow:
+      0 0 8px rgba(255, 0, 255, 0.6),
+      0 0 16px rgba(255, 20, 147, 0.4);
+  }
+
+  .neon-border {
+    box-shadow:
+      0 0 5px #ff00ff,
+      0 0 15px rgba(255, 0, 255, 0.4),
+      inset 0 0 5px rgba(255, 0, 255, 0.1);
+  }
+}
